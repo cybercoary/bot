@@ -21,7 +21,7 @@ menu() {
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         msg+="<b>👇🏽 DISPONIBILIZAMOS SOMENTE 👇🏽</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>🔴 CLARO 🟣 VIVO 🔵 TIM</b>\n"
+        msg+="<b>🔵 TIM | VIVO | CLARO CLARO</b>\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
@@ -36,8 +36,8 @@ criarteste() {
         --text "Você já criou, volte amanhã 🤝"
       return 0
     }
-    usuario=$(echo SSH$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 999999))
+    usuario=$(echo cyber$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 999))
     limite='1'
     tempo='6'
     tuserdate=$(date '+%C%y/%m/%d' -d " +2 days")
