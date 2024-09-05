@@ -37,7 +37,7 @@ criarteste() {
       return 0
     }
     usuario=$(echo cyber$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 999))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='6'
     tuserdate=$(date '+%C%y/%m/%d' -d " +2 days")
