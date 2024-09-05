@@ -15,13 +15,13 @@ ShellBot.username
 menu() {
     local msg
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="OLÁ <b>${message_from_first_name[$id]}</b>, BEM VINDO 🙂\n"
+        msg+="     OLÁ <b>${message_from_first_name[$id]}</b>, BEM VINDO 🙂\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         msg+="GERE SEU TESTE AGORA MESMO!\n\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         msg+="<b>👇🏽 DISPONIBILIZAMOS SOMENTE 👇🏽</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>🔵 TIM | VIVO | CLARO CLARO</b>\n"
+        msg+="<b> TIM | VIVO | CLARO</b>\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
@@ -39,7 +39,7 @@ criarteste() {
     usuario=$(echo cyber$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 9999))
     limite='1'
-    tempo='6'
+    tempo='8'
     tuserdate=$(date '+%C%y/%m/%d' -d " +2 days")
     useradd -M -N -s /bin/false $usuario -e $tuserdate > /dev/null 2>&1
     (echo "$senha";echo "$senha") | passwd $usuario > /dev/null 2>&1
